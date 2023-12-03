@@ -9,12 +9,15 @@ B1 = tk.Button(fenetre, text="Ajout d'une longueur", fg="black", bg="lightgrey",
 B1.grid(column=0, row=0,)
 
 
-B2 = tk.Button(fenetre, text="Ajout d'un nageur", fg="black", bg="lightgrey", width="20")
+B2 = tk.Button(fenetre, text="Ajout d'un nom", fg="black", bg="lightgrey", width="20")
 B2.grid(column=0, row=1)
 
 
 B3 = tk.Button(fenetre, text="Ajout d'un type de nage", fg="black", bg="lightgrey", width="20")
 B3.grid(column=0, row=2)
+
+Badd = tk.Button(fenetre, text="Ajouter à la liste", fg="black", bg="lightgrey", width="20")
+Badd.grid(column=1, row=3)
 
 #partie entry
 
