@@ -21,6 +21,9 @@ Linfo.grid(column=3, row=3)
 B = tk.Button(fenetre, text="Ajouter à la liste", fg="black", bg="lightgrey", width="20")
 B.grid(column=1, row=3)
 
+#Fonctionalité du bouton ajout
+
+
 #partie entry
 
 E1 = tk.Entry(fenetre, width=30)
