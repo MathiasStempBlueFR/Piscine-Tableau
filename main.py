@@ -4,6 +4,15 @@ from tkinter import ttk
 fenetre =tk.Tk() #début de l'iterface
 
 #Grid de gauche | zone d'ajout d'information
+
+#Fonctionalité du bouton ajout
+
+def add_data():
+    get_nom = E1.get()
+    get_nage = E2.get()
+    get_lg = int(E3.get())
+    T.insert("", "end", values=(get_nom, get_nage, get_lg))
+
 #Partie Label
 L1 = tk.Label(fenetre, text="Ajout d'un nom", fg="black", bg="lightgrey", width="20")
 L1.grid(column=0, row=0,)
@@ -18,11 +27,8 @@ Linfo = tk.Label(fenetre, text="Tableau", fg="black", bg="lightgrey", width="30"
 Linfo.grid(column=3, row=3)
 
 #partie button
-B = tk.Button(fenetre, text="Ajouter à la liste", fg="black", bg="lightgrey", width="20")
+B = tk.Button(fenetre, text="Ajouter à la liste", fg="black", bg="lightgrey", width="20", command=add_data)
 B.grid(column=1, row=3)
-
-#Fonctionalité du bouton ajout
-
 
 #partie entry
 
